@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 300;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
@@ -65,7 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format              argument */
-	{ keymap,   "%s | ",          NULL },
+	{ keymap,   " %s | ",          NULL },
 	{ cpu_perc, "CPU: %s%% | ",   NULL },
 	{ ram_perc, "MEM: %s%% | ",   NULL },	
 	{ datetime, "%s",             "%H:%M %d/%m/%y" },
